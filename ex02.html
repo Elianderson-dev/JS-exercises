@@ -7,15 +7,16 @@
 		<title>ex02</title>
 	</head>
 	<script>
-		if (document.getElementById("send")==true){
-		var name = document.getElementById("name")
-		document.write("Hello, "+name+". Nice to meet you.")
+		function sendname(){
+			var reply = document.getElementById("name").value;
+			document.write("Hello, " +reply+" How are you?")
 		}
 	</script>
 	<body>
 		<div>
+			<label>What is your name?</label>
 			<input type="text" id="name">
-			<button type="button" id="send">Send</button>
+			<button onclick="sendname()" type="button" id="send">Send</button>
 		</div>
 	</body>
 
