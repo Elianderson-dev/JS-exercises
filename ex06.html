@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Exercise 06</title>
+	</head>
+	<body>
+		<div>
+			<input  id="clock" type="number" value=0 style="height:50px; width: 50px; border-radius: 50px"></input>
+		</div>
+	</body>
+	<script>
+		setInterval(clockOn, 1000)
+		function clockOn(){
+			var takeValue = document.getElementById("clock").value
+			var sumValues = parseInt(takeValue)+parseInt(1)
+			document.getElementById("clock").value = sumValues
+		}
+	</script>
+</html>
